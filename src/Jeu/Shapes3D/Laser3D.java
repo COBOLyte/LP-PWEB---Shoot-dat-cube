@@ -60,6 +60,6 @@ public class Laser3D extends Shape3D {
      * Augmente la valeur de l'abscisse y pour le déplacer vers le haut
      */
     public void goUp() {
-        super.y += 0.25;
+        super.y += 0.1;
     }
 }
