@@ -27,10 +27,9 @@ public class GLHandler implements GLEventListener {
 
         this.cubes3D = new ArrayList<>();
         for (int i = -2; i <= 2; i++) {
-            this.cubes3D.add(new Cube3D(i, 1.5, -5, 0.1));
-            this.cubes3D.add(new Cube3D(i, 1, -5, 0.1));
-            this.cubes3D.add(new Cube3D(i, 0.5, -5, 0.1));
-            this.cubes3D.add(new Cube3D(i, 0, -5, 0.1));
+            for (double j = 1.5; j >= 0 ; j-=0.5) {
+                this.cubes3D.add(new Cube3D(i, j, -5, 0.1));
+            }
         }
     }
 
