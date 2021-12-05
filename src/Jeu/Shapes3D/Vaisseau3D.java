@@ -87,14 +87,14 @@ public class Vaisseau3D extends Shape3D {
     }
 
     /**
-     * Augmente la valeur de l'ordonnée x pour le déplacer vers la droite
+     * Augmente la valeur de l'abscisse x pour le déplacer vers la droite
      */
     public void goRight() {
         super.x += 0.1;
     }
 
     /**
-     * Réduit la valeur de l'ordonnée x pour le déplacer vers la gauche
+     * Réduit la valeur de l'abscisse x pour le déplacer vers la gauche
      */
     public void goLeft() {
         super.x -= 0.1;
