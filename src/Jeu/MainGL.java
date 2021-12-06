@@ -25,6 +25,7 @@ public class MainGL {
         frame.getContentPane().add(canvas);
         frame.setTitle("Shoot dat cube");
         frame.pack();
+        frame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
 
