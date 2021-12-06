@@ -19,7 +19,7 @@ public class MainGL {
         canvas.addKeyListener(new UserKeyboard(events));
         // Permet d'initialiser la fenêtre à la taille maximale de l'écran de l'utilisateur
         Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-        canvas.setPreferredSize(new Dimension((int) screenSize.getWidth(), (int) screenSize.getWidth()));
+        canvas.setPreferredSize(new Dimension((int) screenSize.getWidth(), (int) screenSize.getHeight()));
         canvas.addGLEventListener(events);
 
         frame.getContentPane().add(canvas);

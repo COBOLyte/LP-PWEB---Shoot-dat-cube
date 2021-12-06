@@ -100,18 +100,18 @@ public class GLHandler implements GLEventListener {
         if (!this.hasReachedRightLimit) this.position += 0.01;
         else this.position -= 0.01;
 
-        if (this.position >= 1.1 && this.position <= 1.2) this.hasReachedRightLimit = true;
-        else if (this.position <= -1.1 && this.position >= -1.2) this.hasReachedRightLimit = false;
+        if (this.position >= 1.25) this.hasReachedRightLimit = true;
+        else if (this.position <= -1.25) this.hasReachedRightLimit = false;
     }
 
     @Override
     public void dispose(GLAutoDrawable arg0) {}
 
     public void goRight() {
-        if (this.vaisseau3D.getX() <= 3) this.vaisseau3D.goRight();
+        if (this.vaisseau3D.getX() <= 3.25) this.vaisseau3D.goRight();
     }
     public void goLeft() {
-        if (this.vaisseau3D.getX() >= -3) this.vaisseau3D.goLeft();
+        if (this.vaisseau3D.getX() >= -3.25) this.vaisseau3D.goLeft();
     }
 
     public void fire() {
